@@ -50,26 +50,25 @@ public class ABR {
 		}
 	}
 	
-	public boolean contains(int i){
+	/*public boolean contains(){
+		boolean trouve = false;
 		if (this.vide){
-			return(false);
+			return(trouve);
 		}
 		else{
-			if (this.valeur == i){
-				return(true);
+			if (arbreDroiteOccupe){
+				trouve= this.arbreDroite.contains();
 			}
-			else{if(i<this.valeur){
-				return(arbreGauche.contains(i));
+			if (arbreGaucheOccupe){
+				trouve= this.arbreGauche.contains();
 			}
-			else{
-				return(arbreDroite.contains(i));
-			}
-			}
+			return(trouve);
 			
 		}
 		
-		}
 		
+		}
+		*/
 	
 	
 
