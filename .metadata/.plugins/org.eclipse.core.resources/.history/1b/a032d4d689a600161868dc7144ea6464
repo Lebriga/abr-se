@@ -12,7 +12,10 @@ public class ABR {
 		this.vide=true;
 	}
 	
-	
+	public ABR(int i){
+		this.vide=false;
+		this.valeur=i;
+	}
 	
 	/*public ArrayList<ABR> getArbre(){
 		return(arbre);
@@ -22,7 +25,7 @@ public class ABR {
 		return(this.vide);
 	}
 	
-	/*public boolean contains(){
+	public boolean contains(){
 		boolean trouve = false;
 		if (this.vide){
 			return(trouve);
@@ -40,25 +43,8 @@ public class ABR {
 		
 		
 		}
-		*/
 	
 	public void insert(int i){
-		if (vide){
-			this.valeur = i;
-			this.vide=false;
-			this.arbreDroite = new ABR();
-			this.arbreGauche = new ABR();
-		}
-		else{
-			if (i<this.valeur){
-				this.arbreGauche.insert(i);
-			}
-			else{
-				if (i>this.valeur){
-					this.arbreDroite.insert(i);
-				}
-			}
-		}
 		
 	}
 
