@@ -10,7 +10,5 @@ public class ABRTest {
 		ABR a = new ABR();
 		assertTrue(a.isEmpty());
 	}
-	
-	
-	
+
 }

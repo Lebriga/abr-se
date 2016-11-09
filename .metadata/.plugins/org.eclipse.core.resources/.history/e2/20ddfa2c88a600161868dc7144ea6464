@@ -1,9 +1,9 @@
-
+import java.util.ArrayList;
 
 public class ABR {
 	private ABR arbreDroite;
 	private ABR arbreGauche;
-	private boolean arbreDroiteOccupe;
+	private boolean arbreDroitOccupe;
 	private boolean arbreGaucheOccupe;
 	private int valeur;
 	private boolean vide;
@@ -23,14 +23,14 @@ public class ABR {
 	public boolean contains(){
 		boolean trouve = false;
 		if (this.vide){
-			return(trouve);
+			return(trouve)
 		}
 		else{
-			if (arbreDroiteOccupe){
-				trouve= this.arbreDroite.contains();
+			if (arbreDroitOccupe){
+				trouve= arbreDroit.contains();
 			}
 			if (arbreGaucheOccupe){
-				trouve= this.arbreGauche.contains();
+				trouve= arbreGauche.contains();
 			}
 			return(trouve);
 			
