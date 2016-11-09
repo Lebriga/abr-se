@@ -20,14 +20,4 @@ public class ABRTest {
 		assertFalse(a.isEmpty());
 	}
 	
-	@Test
-	public void testNbElements(){
-		ABR a = new ABR();
-		a.insert(3);
-		a.insert(5);
-		a.insert(1);
-		assertEquals(a.nbElements(),3);
-	
-	}
-	
 }
