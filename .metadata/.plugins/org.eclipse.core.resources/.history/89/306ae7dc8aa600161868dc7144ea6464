@@ -22,36 +22,6 @@ public class ABR {
 		return(this.vide);
 	}
 	
-	
-	public void insert(int i){
-		if (vide){
-			this.valeur = i;
-			this.vide=false;
-			this.arbreDroite = new ABR();
-			this.arbreGauche = new ABR();
-		}
-		else{
-			if (i<this.valeur){
-				this.arbreGauche.insert(i);
-			}
-			else{
-				if (i>this.valeur){
-					this.arbreDroite.insert(i);
-				}
-			}
-		}
-		
-	}
-	
-	public int nbElements(){
-		if (this.vide){
-			return(0);
-		}
-		else{
-			return(this.arbreDroite.nbElements() + this.arbreGauche.nbElements());
-		}
-	}
-	
 	/*public boolean contains(){
 		boolean trouve = false;
 		if (this.vide){
@@ -72,7 +42,25 @@ public class ABR {
 		}
 		*/
 	
-	
+	public void insert(int i){
+		if (vide){
+			this.valeur = i;
+			this.vide=false;
+			this.arbreDroite = new ABR();
+			this.arbreGauche = new ABR();
+		}
+		else{
+			if (i<this.valeur){
+				this.arbreGauche.insert(i);
+			}
+			else{
+				if (i>this.valeur){
+					this.arbreDroite.insert(i);
+				}
+			}
+		}
+		
+	}
 
 			
 }
