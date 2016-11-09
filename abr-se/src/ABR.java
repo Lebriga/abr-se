@@ -6,5 +6,13 @@ public class ABR {
 	public ABR(){
 		Arbre= new ArrayList<ABR>();
 	}
-
+	
+	public ArrayList<ABR> getArbre(){
+		return(Arbre);
+	}
+	
+	public boolean isEmpty(){
+		ArrayList<ABR> a = new ArrayList<ABR>();
+		return(this.Arbre == a);
+	}
 }
